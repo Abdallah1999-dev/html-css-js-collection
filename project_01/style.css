@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    position: relative;
+}
+/* =========================card========================== */
+.card{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 4px 4px 0px #00000008;
+    background-color: rgb(247, 247, 247);
+    overflow: hidden;
+    height: 450px;
+}
+/* =========================your result====================== */
+.card .your-result{
+    width: 50%;
+    padding:2em 2em;
+    text-align: center;
+    background: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.card .your-result .label{
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom:1.5em;
+    letter-spacing: 2px;
+}
+.card .your-result .circle{
+    border-radius: 50%;
+    align-content: center;
+    height: 170px;
+    margin-top: .8em;
+    width: 170px;
+    background: linear-gradient(to bottom right, hsl(252, 84%, 36%), hsl(241, 71%, 59%));
+    position: relative;
+}
+.card .your-result .circle .number{
+    font-size: 3.4rem;
+    font-weight: 800;
+}
+.card .your-result .circle::after{
+    content: "of 100";
+    position: absolute;
+    left:38%;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.522);
+}
+.card .your-result .result{
+    text-transform: capitalize;
+    padding-top: 1.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.card .your-result .note{
+    width: 100%;
+    padding-top: 1.3em;
+    color: rgba(255, 255, 255, 0.798);
+}
+.card .your-result .note::first-letter{
+    text-transform: capitalize;
+}
+
+
+/* =======================summary============================= */
+.card .summary{
+    width: 50%;
+    padding: 2em;
+}
+.card .summary .label{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+.card .summary .detailed-result{
+    display: flex;
+    flex-direction: column;
+    padding: 1.4em 0;
+    gap: 1em;
+    width: 100%;
+}
+.card .summary .detailed-result .subject{
+    display:flex;
+    border-radius: 9px;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em .9em;
+    font-size: .9rem;
+    font-weight:400 ;
+}
+.card .summary .detailed-result .subject .logo-subject{
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+    align-items: center;
+}
+.card .summary .detailed-result .subject .logo-subject .subject-name{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.card .summary .detailed-result .subject .degree span{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.card .summary .detailed-result .subject:nth-child(1){
+    background-color:hsl(0, 100%, 97%);
+}
+.card .summary .detailed-result .subject:nth-child(2){
+    background-color:hsl(39, 100%, 97%);
+}
+.card .summary .detailed-result .subject:nth-child(3){
+    background-color:hsl(166, 100%, 97%);
+}
+.card .summary .detailed-result .subject:nth-child(4){
+    background-color:hsl(234, 85%, 97%);
+}
+.card .summary .detailed-result .subject:nth-child(1):hover{
+    background-color:hsl(0, 100%, 90%);
+}
+.card .summary .detailed-result .subject:nth-child(2):hover{
+    background-color:hsl(39, 100%, 90%);
+}
+.card .summary .detailed-result .subject:nth-child(3):hover{
+    background-color:hsl(166, 100%, 90%);
+}
+.card .summary .detailed-result .subject:nth-child(4):hover{
+    background-color:hsl(234, 85%, 90%);
+}
+.card .summary .detailed-result .subject:nth-child(1) .logo-subject .subject-name{
+    color: hsl(0, 100%, 67%);
+}
+.card .summary .detailed-result .subject:nth-child(2) .logo-subject .subject-name{
+    color: hsl(39, 100%, 56%);
+}
+.card .summary .detailed-result .subject:nth-child(3) .logo-subject .subject-name{
+    color: hsl(166, 100%, 37%);
+}
+.card .summary .detailed-result .subject:nth-child(4) .logo-subject .subject-name{
+    color: hsl(234, 85%, 45%);
+}
+.card .summary a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 25px;
+    padding: 1em 0;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card .summary a::after{
+    content: "";
+    width: 350px;
+    height: 500px;
+    background:linear-gradient(to bottom right, hsl(252, 78%, 56%), hsl(241, 75%, 13%));
+    position: absolute;
+    left: -20px;
+    top:55px;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+.card .summary a:hover::after{
+    transform:translateY(-70px);
+    transition: .3s ease;
+}
+
+
+
+
+/* ===================================== */
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        width:100vw;
+        height: auto;
+        align-items: center;
+        border-radius: 0;
+    }
+    .card .your-result{
+        width: 100%;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        padding-top: 9em;
+    }
+    .card .summary {
+        width: 100%;   
+    }
+    .card .summary .label{
+        padding-left: 2em;
+    }
+    .card .summary .detailed-result{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card .summary a{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card .summary a::after{
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    body{
+        height: 200vh;
+    }
+  
+}

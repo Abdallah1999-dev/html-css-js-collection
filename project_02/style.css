@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --titles-color:hsl(210, 10%, 33%);
+    --descriptions-color:hsl(201, 11%, 66%);
+
+}
+/* =========================== header ========================= */
+.header{
+    background-image: url(./images/bg-header-desktop.png);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3.5em 5.5em;
+}
+.header .header-img{
+    height: 115px;
+}
+.header .header-title{
+    padding-top: 1em;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: var(--titles-color);
+}
+.header .header-title::first-letter{
+    text-transform:capitalize ;
+}
+.header .header-description{
+    padding-top: 1em;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    color:var(--descriptions-color);
+    font-size: 22px;
+    text-align: center;
+}
+.header .header-description::first-letter{
+    text-transform:capitalize ;
+}
+.header .header-actions{
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header .header-actions a{
+    text-decoration: none;
+    color:white;
+    padding: 1em 3em;
+    border-radius: 25px;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+}
+
+.header .header-actions .btn-download-ios {
+    background-color: hsl(171, 66%, 44%);
+}
+.header .header-actions .btn-download-mac {
+    background-color: hsl(233, 100%, 69%);
+}
+/* =========================== features ========================= */
+.features{
+    padding-top: 1em;
+}
+.features .features-title , .features-discription{
+    text-align: center;
+}
+.features .features-title{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color:var(--titles-color);
+} 
+.features .features-discription{
+    padding-top:1em ;
+    font-family: "Bai Jamjuree", sans-serif;
+    color:var(--descriptions-color);
+    font-size: 19px;
+    
+}
+.features .features-discription::first-letter{
+    text-transform:capitalize;
+}
+.features .features-content{
+    display: flex;
+    padding-top: 3em;
+    gap: 5rem;
+}
+.features .features-content .features-img{
+    height: 735px;
+}
+.features .features-content .features-list .list-item{
+    padding-top:5.5em ;
+}
+.features .features-content .features-list .list-item .feature-name{
+    text-transform: capitalize;
+    font-family: "Bai Jamjuree", sans-serif;
+    padding-bottom: .4em;
+    color: var(--titles-color)
+}
+.features .features-content .features-list .list-item .feature-description{
+    color:var(--descriptions-color);
+
+}
+.features .features-content .features-list .list-item .feature-description::first-letter{
+    text-transform:capitalize ;
+}
+.features .features-content .features-list .list-item:nth-of-type(2) .feature-name::first-letter {
+    text-transform: none;
+}
+/* =========================== access ========================= */
+
+.access{
+    padding-top: 10rem;
+    text-align: center;
+    
+}
+.access .access-title{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color:var(--titles-color);
+}
+.access .access-description{
+    padding-top:1em ;
+    font-family: "Bai Jamjuree", sans-serif;
+    color:var(--descriptions-color);
+    font-size: 19px;
+}
+.access .access-img{
+    padding-top: 5em;
+}
+/* =========================== workflow ========================= */
+
+.workflow{
+    padding-top: 4.5em;
+    text-align: center;
+}
+.workflow .workflow-title{
+     font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color:var(--titles-color);
+}
+.workflow .workflow-description{
+    padding-top:1em ;
+    font-family: "Bai Jamjuree", sans-serif;
+    color:var(--descriptions-color);
+    font-size: 19px;
+}
+.workflow .cards{
+    padding-top:5em ;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.workflow .cards .card-logo{
+    padding-bottom: 2em;
+}
+.workflow .cards .card-title{
+    font-family: "Bai Jamjuree", sans-serif;
+    padding-bottom: .4em;
+    color: var(--titles-color);
+    font-size:1.3rem;
+}
+.workflow .cards .card-description{
+    padding-top:1em ;
+    font-family: "Bai Jamjuree", sans-serif;
+    color:var(--descriptions-color);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.workflow .cards .card-description::first-letter{
+    text-transform: capitalize;
+}
+.workflow .workflow-logos{
+    padding-top: 10em;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.workflow .workflow-logos img{
+    height: 35px;
+}
+.workflow .workflow-logos .hp{
+    height: 60px;
+}
+/* =========================== footer ========================= */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:4.5em;
+}
+
+.footer .footer-title{
+    padding-top: 1em;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: var(--titles-color);
+}
+
+.footer .footer-description{
+    padding-top: 1em;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    color:var(--descriptions-color);
+    font-size: 22px;
+    text-align: center;
+}
+.footer .footer-description::first-letter{
+    text-transform:capitalize ;
+}
+.footer .footer-actions{
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10rem;
+}
+.footer .footer-actions a{
+    text-decoration: none;
+    color:white;
+    padding: 1em 3em;
+    border-radius: 25px;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+}
+
+.footer .footer-actions .btn-download-ios {
+    background-color: hsl(171, 66%, 44%);
+}
+.footer .footer-actions .btn-download-mac {
+    background-color: hsl(233, 100%, 69%);
+}
+.footer .footer-nav{
+    display: flex;
+    align-items: center;
+    background-color:#f5f6f8;
+    width:100%;
+    height: 150px;
+    justify-content: center;
+    gap: 35rem;
+    position: relative;
+}
+.footer .footer-nav .footer-logo{
+    height: 50px;
+}
+.footer .footer-nav .nav-items{
+    position: relative;
+    right:400px;
+}
+.footer .footer-nav .nav-items{

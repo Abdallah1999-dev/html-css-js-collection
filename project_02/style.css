@@ -73,12 +73,14 @@
     font-size: 2.2rem;
     font-weight: 600;
     color:var(--titles-color);
+    padding: 1em 1.8em 0;
 } 
 .features .features-discription{
-    padding-top:1em ;
     font-family: "Bai Jamjuree", sans-serif;
     color:var(--descriptions-color);
     font-size: 19px;
+    padding: 1em 31em 0;
+
     
 }
 .features .features-discription::first-letter{
@@ -103,7 +105,7 @@
 }
 .features .features-content .features-list .list-item .feature-description{
     color:var(--descriptions-color);
-
+    padding-right:35em ;
 }
 .features .features-content .features-list .list-item .feature-description::first-letter{
     text-transform:capitalize ;
@@ -267,7 +269,126 @@
     font-family: "Bai Jamjuree", sans-serif;
     font-size: .9rem;
 }
+.footer .footer-nav .nav-items ul li a:hover{
+    text-decoration: underline;
+}
 .footer .footer-nav .footer-social img{
     padding-left:1em ;
 }
 
+/* ============================================================ */
+/* ==============mobile==================== */
+@media screen and (max-width:440px) {
+    /* ========header======= */
+    .header .header-img{
+        height: 80px;
+    }
+    .header .header-title{
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 1.5em;
+    }
+    .header .header-description{
+        font-size: .6rem;
+    }
+    .header .header-actions{
+        flex-direction: column;
+        gap:.5rem;
+    }
+    .header .header-actions a{
+    text-decoration: none;
+    color:white;
+    padding: .7em 3.5em;
+    border-radius: 25px;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-size: .7rem;
+    }   
+    /* =========features============ */
+    .features .features-title{
+        font-size: 1.8rem;
+    }
+    .features .features-discription{
+        font-size: 1rem;
+        padding: 1.2em 1.5em;
+    }
+    .features .features-content{
+        flex-direction: column;
+        gap:1rem;
+        align-items: center;
+    }
+    .features .features-content .features-img{
+        height: 250px;
+        width: auto;
+    }
+    .features .features-content .features-list .list-item{
+        text-align: center;
+    }
+    .features .features-content .features-list .list-item .feature-description{
+        padding: 0 1.9em;
+    }
+    .access .access-description{
+        padding: 1em  1.3em 0;
+        font-size: 1rem;
+    }
+    .access .access-img{
+        height: 200px;
+    }
+    /* ===============workflow=============== */
+    .workflow .cards{
+        flex-direction: column;
+    }
+    .workflow .cards .card-description{
+        padding: 1em 1.4em 0;
+        font-size: 1rem;
+    }
+    .workflow .workflow-logos{
+        gap: 6rem;
+        flex-direction: column;
+        padding: 4em 6em 0;
+    }
+    /* ============footer========== */
+    .footer .footer-title{
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 4.5em 1em 0;
+    }
+    .footer .footer-description{
+        font-size: 1rem;
+        padding: 1em 1.7em 0;
+    }
+    .footer .footer-actions{
+        flex-direction: column;
+        gap:.5rem;
+    }
+    .footer .footer-actions a{
+        text-decoration: none;
+        color:white;
+        padding: .7em 3.5em;
+        border-radius: 25px;
+        font-family: "Bai Jamjuree", sans-serif;
+        font-weight: 600;
+        font-size: .7rem;
+    }   
+    .footer .footer-nav{
+        flex-direction: column;
+        gap:1rem;
+        height: auto;
+    }
+    .footer .footer-nav .footer-logo{
+        padding-top:2em ;
+    }
+    .footer .footer-nav .nav-items{
+        right:0;
+    }
+    .footer .footer-nav .nav-items ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 0;
+    }
+    .footer .footer-nav .footer-social img{
+        padding-bottom:1.5em ;
+    }
+
+}
